@@ -13,6 +13,7 @@
       return document.querySelector(el)
     }
   }
+  
 //mouse movement
 const cursor = document.querySelector("#cursor");
 const cursorBorder = document.querySelector("#cursor-border");
