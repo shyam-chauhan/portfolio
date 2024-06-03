@@ -472,116 +472,65 @@ section {
   position: relative;
 }
 
-.skills .icon-box .icon i {
-  font-size: 36px;
-  transition: 0.5s;
+/*--------------------------------------------------------------
+# education
+--------------------------------------------------------------*/
+.education .education-title {
+  font-size: 26px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #45505b;
+}
+
+.education .education-item {
+  padding: 0 0 20px 20px;
+  margin-top: -2px;
+  border-left: 2px solid #0563bb;
   position: relative;
 }
 
-.skills .icon-box .icon svg {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.skills .icon-box .icon svg path {
-  transition: 0.5s;
-  fill: #f5f5f5;
-}
-
-.skills .icon-box h4 {
+.education .education-item h4 {
+  line-height: 18px;
+  font-size: 18px;
   font-weight: 600;
-  margin: 10px 0 15px 0;
-  font-size: 22px;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: #0563bb;
+  margin-bottom: 10px;
 }
 
-.skills .icon-box h4 a {
-  color: #fff;
-  transition: ease-in-out 0.3s;
+.education .education-item h5 {
+  font-size: 16px;
+  background: rgb(79, 78, 78);
+  padding: 5px 15px;
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 10px;
 }
 
-.skills .icon-box p {
-  line-height: 24px;
-  font-size: 14px;
-  margin-bottom: 0;
-  color: grey
+.education .education-item ul {
+  padding-left: 20px;
 }
 
-.skills .icon-box:hover {
-  border-color: #fff;
-  box-shadow: 0px 0 35px 0 rgba(0, 0, 0, 0.08);
+.education .education-item ul li {
+  padding-bottom: 10px;
 }
 
-.skills .iconbox-blue i {
-  color: #47aeff;
+.education .education-item:last-child {
+  padding-bottom: 0;
 }
 
-.skills .iconbox-blue:hover .icon i {
-  color: #fff;
-}
-
-.skills .iconbox-blue:hover .icon path {
-  fill: #47aeff;
-}
-
-.skills .iconbox-orange i {
-  color: #ffa76e;
-}
-
-.skills .iconbox-orange:hover .icon i {
-  color: #fff;
-}
-
-.skills .iconbox-orange:hover .icon path {
-  fill: #ffa76e;
-}
-
-.skills .iconbox-pink i {
-  color: #e80368;
-}
-
-.skills .iconbox-pink:hover .icon i {
-  color: #fff;
-}
-
-.skills .iconbox-pink:hover .icon path {
-  fill: #e80368;
-}
-
-.skills .iconbox-yellow i {
-  color: #ffbb2c;
-}
-
-.skills .iconbox-yellow:hover .icon i {
-  color: #fff;
-}
-
-.skills .iconbox-yellow:hover .icon path {
-  fill: #ffbb2c;
-}
-
-.skills .iconbox-red i {
-  color: #ff5828;
-}
-
-.skills .iconbox-red:hover .icon i {
-  color: #fff;
-}
-
-.skills .iconbox-red:hover .icon path {
-  fill: #ff5828;
-}
-
-.skills .iconbox-teal i {
-  color: #11dbcf;
-}
-
-.skills .iconbox-teal:hover .icon i {
-  color: #fff;
-}
-
-.skills .iconbox-teal:hover .icon path {
-  fill: #11dbcf;
+.education .education-item::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  left: -9px;
+  top: 0;
+  background: #fff;
+  border: 2px solid #0563bb;
 }
 
 
