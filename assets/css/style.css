@@ -707,15 +707,63 @@ section {
 
 
 
+/* style faq*/
 
+/* Default state: collapsed accordion button */
+.accordion-button {
+  background-color: #00a2ff; /* Light gray background */
+  border-color: cyan; /* Cyan border color */
+  border-radius: 8px; /* Rounded corners */
+  color: #000; /* Default text color */
+  transition: background-color 0.3s, border-color 0.3s;
+}
 
+/* Hover effect for the accordion button */
+.accordion-button:hover {
+  background-color: #e9f4fb; /* Very light blue shade when hovered */
+  border-color: cyan; /* Cyan border color */
+  cursor: none; /* Make the mouse cursor invisible when hovering */
+}
 
+/* When the accordion is expanded */
+.accordion-button:not(.collapsed) {
+  background-color: black; /* Light blue shade when expanded */
+  border-color: cyan; /* Cyan border color when expanded */
+  color: white; /* White text when expanded */
+}
 
+/* Focus state */
+.accordion-button:focus {
+  box-shadow: none; /* Remove focus shadow */
+  border-color: cyan; /* Ensure border color remains consistent */
+}
 
+/* Accordion item border */
+.accordion-item {
+  border: 1px solid cyan; /* Cyan border color */
+  border-radius: 8px; /* Rounded corners */
+}
 
+.accordion-item .accordion-button.collapsed {
+  border-bottom: 1px solid cyan; /* Add border to the collapsed button */
+}
 
+/* Ensure the accordion button has rounded corners */
+.accordion-button {
+  border-radius: 8px !important; /* Override any default Bootstrap styles */
+}
 
+/* Light blue background for the content area of the accordion */
+.accordion-collapse {
+  background-color: #00a2ff; /* Very light blue background for the content area */
+  border-radius: 8px; /* Rounded corners for the content area */
+  padding: 15px; /* Add padding for spacing inside the content */
+}
 
+/* Optional: Add slight shadow to content for better visibility */
+.accordion-collapse.show {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for a subtle effect */
+}
 
 
 /* globe animation code start */
@@ -729,7 +777,7 @@ body {
 }
 
 .wrap {
-  position: relative;
+  position: absolute;
   padding-bottom: 50px;
   /* top: %; */
   left: 70%;
